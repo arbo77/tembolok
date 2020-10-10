@@ -11,8 +11,8 @@ const App = () => {
   }
 
   return (
-    <div>
-      <h1>{data.counter || 0}</h1>
+    <div style={{textAlign: 'center'}}>
+      <h1>{data?.counter || 0}</h1>
       <button onClick={increment}>Increment</button>
     </div>
   )
