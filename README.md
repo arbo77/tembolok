@@ -18,7 +18,7 @@ npm install --save tembolok
 
 ## useStore in action
 
-![useStore](./sample.png "Title")
+![useStore](./sample.gif "Title")
 
 ## Sample code
 
