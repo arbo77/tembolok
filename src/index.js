@@ -2,4 +2,4 @@
  * @arbo77
  */
 
-export { useStore, purgeStore } from './store'
+export { useStore, purgeStore, useAuth } from './store'

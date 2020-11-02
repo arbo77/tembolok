@@ -1,6 +1,6 @@
 {
   "name": "tembolok",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "Persistent state management for React",
   "author": "arbo77",
   "license": "MIT",
