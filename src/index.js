@@ -1,5 +1,7 @@
+/* eslint-disable prettier/prettier */
 /**
  * @arbo77
  */
 
-export { useStore, purgeStore, useAuth } from './store'
+export { useStore, purgeStore } from './store'
+export { useAuth } from './auth'

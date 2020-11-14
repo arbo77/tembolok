@@ -2,6 +2,8 @@ import React from 'react'
 import { useStore, purgeStore, useAuth } from 'tembolok'
 
 const App = () => {
+  const [fcm] = useStore('fcm')
+  const [notif] = useStore('notif')
   const [data, setData] = useStore('data', {
     persistent: false
   })
@@ -13,8 +15,10 @@ const App = () => {
     storageBucket: "bubokcd6.appspot.com",
     messagingSenderId: "929887876776",
     appId: "1:929887876776:web:048335f8df690a059af49d",
-    measurementId: "G-5CGHPVV7NZ"
+    measurementId: "G-5CGHPVV7NZ",
+    messagingApiKey: "BLjb8wsz19C1DGKnupEAp_zpXW3QVQxfhBYoJItxcZBbAsbYcXaPeWMH3N0QX3GY3UAv77Ydw_7bvNkxk8wFgcI"
   })
+
 
   const increment = () => {
     setData({
@@ -31,7 +35,6 @@ const App = () => {
   const purge = () => {
     purgeStore()
   }
-
   return (
     <div style={{ textAlign: 'center' }}>
       <h1>{data?.counter || 0}</h1>
@@ -41,7 +44,16 @@ const App = () => {
       <button onClick={auth.signIn}>Signin</button>
       <h1>Auth</h1>
       <div>
-        {JSON.stringify(auth.user)}
+        {JSON.stringify(auth)}
+      </div>
+      <h1>FCM</h1>
+      <p>{auth?.user?.token?.messaging  }</p>
+      <div>
+        {JSON.stringify(fcm)}
+      </div>
+      <h1>Notif</h1>
+      <div>
+        {JSON.stringify(notif)}
       </div>
     </div>
   )

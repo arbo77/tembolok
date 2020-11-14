@@ -20,3 +20,8 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/example/firebase.json
+/example/.firebase
+/example/build
+/example/.firebaserc
+/example/public/firebase-messaging-sw.js
