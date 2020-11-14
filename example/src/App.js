@@ -7,17 +7,7 @@ const App = () => {
   const [data, setData] = useStore('data', {
     persistent: false
   })
-  const auth = useAuth({
-    apiKey: "AIzaSyAXZpSaDTqgRFYP16WpRJKvlRgT3e-OQIE",
-    authDomain: "app.bubo.id",
-    databaseURL: "https://bubokcd6.firebaseio.com",
-    projectId: "bubokcd6",
-    storageBucket: "bubokcd6.appspot.com",
-    messagingSenderId: "929887876776",
-    appId: "1:929887876776:web:048335f8df690a059af49d",
-    measurementId: "G-5CGHPVV7NZ",
-    messagingApiKey: "BLjb8wsz19C1DGKnupEAp_zpXW3QVQxfhBYoJItxcZBbAsbYcXaPeWMH3N0QX3GY3UAv77Ydw_7bvNkxk8wFgcI"
-  })
+  const auth = useAuth({  })
 
 
   const increment = () => {
